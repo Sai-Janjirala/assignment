@@ -14,7 +14,7 @@ int main()
 
         for (int k = 1; k <= (i * 2) - 1; k = k + 1)
         {
-            printf("*");
+            printf("%c", 64 + k);
         }
         printf("\n");
     }
