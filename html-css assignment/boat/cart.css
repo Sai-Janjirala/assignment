@@ -1,0 +1,153 @@
+/* ===================================
+   EMPTY CART PAGE - EXTERNAL CSS
+   File: cart-style.css
+   =================================== */
+
+/* ============= RESET & BASE STYLES ============= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* ============= CART CONTAINER ============= */
+.cart-container {
+    max-width: 500px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============= HEADER STYLES ============= */
+.cart-header {
+    padding: 30px 20px 20px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.cart-header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* ============= MAIN CONTENT ============= */
+.cart-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.empty-cart-content {
+    text-align: center;
+    max-width: 350px;
+    width: 100%;
+}
+
+/* ============= CART ICON ============= */
+.cart-icon {
+    margin-bottom: 30px;
+}
+
+.cart-icon img {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ============= EMPTY MESSAGE ============= */
+.empty-message {
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+/* ============= BUTTON STYLES ============= */
+.start-shopping-btn {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 280px;
+}
+
+.start-shopping-btn:hover {
+    background-color: #2d2d2d;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.start-shopping-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ============= RESPONSIVE DESIGN ============= */
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .cart-header h1 {
+        font-size: 24px;
+    }
+
+    .cart-icon img {
+        width: 130px;
+    }
+
+    .empty-message {
+        font-size: 18px;
+    }
+
+    .start-shopping-btn {
+        font-size: 15px;
+        padding: 12px 35px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .cart-header {
+        padding: 20px 15px 15px;
+    }
+
+    .cart-header h1 {
+        font-size: 22px;
+    }
+
+    .cart-main {
+        padding: 30px 15px;
+    }
+
+    .cart-icon img {
+        width: 120px;
+    }
+
+    .empty-message {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+
+    .start-shopping-btn {
+        font-size: 14px;
+        padding: 12px 30px;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,410 @@
+/* General Styles */
+:root {
+    --primary-color: #0d2c54;
+    --secondary-color: #f1f5f9;
+    --accent-color: #e2f3ff;
+    --text-color: #333;
+    --light-text-color: #555;
+    --white-color: #fff;
+    --border-radius: 12px;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-dark {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn-dark:hover {
+    background-color: #1a4a8a;
+}
+
+/* Header / Navbar */
+.navbar {
+    position: sticky;
+    top: 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-radius);
+    padding: 10px 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.logo img {
+    height: 40px;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--light-text-color);
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.nav-menu a.active, .nav-menu a:hover {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+
+/* Hero Section */
+.hero {
+    padding-top: 80px;
+}
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text > p:first-child {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+    margin: 30px 0;
+}
+
+.stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+}
+
+.stat-label {
+    color: var(--light-text-color);
+    margin: 0;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+/* Vehicles Section */
+.vehicles {
+    background-color: var(--secondary-color);
+}
+
+.vehicles > .container > p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.vehicle-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--white-color);
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    text-align: center;
+    padding: 20px;
+    width: 180px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card img {
+    max-width: 100%;
+    height: 120px;
+    object-fit: contain;
+}
+
+.card p {
+    margin-top: 15px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+/* Two Column Layout */
+.two-column {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.two-column .text-content,
+.two-column .image-content {
+    flex: 1;
+}
+
+.two-column img {
+    width: 100%;
+    border-radius: var(--border-radius);
+}
+
+/* Leasing Steps Section */
+.leasing-steps h2 {
+    text-align: left;
+}
+.steps {
+    margin-top: 30px;
+    position: relative;
+}
+.step {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+.step-number {
+    color: #ccc;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.step-details h3 {
+    margin: 0 0 5px 0;
+}
+.step-details p {
+    margin: 0;
+    color: var(--light-text-color);
+}
+
+
+/* FAQ Section */
+.faq {
+    background-color: var(--secondary-color);
+}
+.faq-header {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.faq-header p {
+    font-weight: bold;
+    color: var(--primary-color);
+    margin: 0;
+}
+.faq-header h2 {
+    text-align: left;
+    margin: 0;
+}
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+.faq-item summary {
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+.faq-item .plus {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+.faq-item[open] summary .plus {
+    content: "-"; /* This doesn't work as expected, but the '+' is present */
+}
+.faq-item p {
+    margin-top: 15px;
+    color: var(--light-text-color);
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: #ccc;
+    padding: 50px 0 20px 0;
+}
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: var(--white-color);
+}
+.footer-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #3a5a8a;
+}
+.footer-about {
+    flex: 1;
+}
+.footer-logo {
+    height: 40px;
+    margin-bottom: 20px;
+}
+.footer-links {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-links h4 {
+    color: var(--white-color);
+}
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li {
+    margin-bottom: 10px;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 0.9rem;
+}
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+.social-icons a {
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Floating WhatsApp Icon */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+.whatsapp-float img {
+    width: 35px; /* Placeholder */
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .navbar .container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-stats {
+        justify-content: center;
+    }
+    .two-column {
+        flex-direction: column;
+    }
+     .leasing-steps h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    
+    .navbar .nav-menu {
+        display: none; /* Simple hiding for mobile, a JS-based toggle would be better */
+    }
+    
+    .footer-main, .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

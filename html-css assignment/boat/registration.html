@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KwikPass - Register for Best Deals</title>
+    <meta name="description" content="Register with KwikPass to avail the best deals with 1 year warranty, 7 days replacement, and free shipping.">
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <div class="content-wrapper">
+                <div class="brand-section">
+                    <svg class="boat-logo" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40 10 L40 45 L20 45 Z" fill="#E53935"/>
+                        <path d="M40 45 L40 50 L15 50 Z" fill="#C62828"/>
+                        <path d="M15 50 L40 50 L50 58 L10 58 Z" fill="#C62828"/>
+                    </svg>
+                    
+                    <div class="brand-text">
+                        <p class="powered-by">Powered by</p>
+                        <div class="brand-name">
+                            Kwik<span class="brand-highlight">Pass</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="welcome-heading">Welcome! Register to avail the best deals!</h1>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                            </svg>
+                        </div>
+                        <p class="feature-title">1 Year Warranty</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+                            </svg>
+                        </div>
+                        <p class="feature-title">7 Days Replacement</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="1" y="3" width="15" height="13"/>
+                                <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                                <circle cx="5.5" cy="18.5" r="2.5"/>
+                                <circle cx="18.5" cy="18.5" r="2.5"/>
+                            </svg>
+                        </div>
+                        <p class="feature-title">Free Shipping</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="right-panel">
+            <div class="form-wrapper">
+                <div class="form-card">
+                    <div class="form-header">
+                        <h2 class="form-heading">Get Started</h2>
+                        <p class="form-subheading">Please enter Mobile Number</p>
+                    </div>
+
+                    <form id="registrationForm" class="registration-form">
+                        <div class="input-group">
+                            <div class="mobile-input-container">
+                                <div class="country-code">
+                                    <span class="flag">🇮🇳</span>
+                                    <span class="code">+91</span>
+                                </div>
+                                <input 
+                                    type="tel" 
+                                    id="mobileNumber" 
+                                    class="mobile-input" 
+                                    placeholder="Enter Mobile Number" 
+                                    maxlength="10"
+                                    required
+                                >
+                            </div>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="notify" class="checkbox">
+                            <label for="notify" class="checkbox-label">
+                                Notify me for any updates & offers
+                            </label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Continue</button>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="terms" class="checkbox" required>
+                            <label for="terms" class="terms-label">
+                                I accept that I have read & understood Gokwik's 
+                                <a href="#" class="link">Privacy Policy</a> test and 
+                                <a href="#" class="link">T&Cs</a>.
+                            </label>
+                        </div>
+
+                        <div class="trouble-link-wrapper">
+                            <a href="#" class="trouble-link">Trouble logging in?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

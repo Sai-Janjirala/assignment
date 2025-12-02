@@ -1,0 +1,357 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #00234B;
+}
+
+/* Header and Navigation Bar */
+.navbar {
+    background-color: white;
+    padding: 15px 0;
+    border-bottom: 1px solid #e0e0e0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px; /* Placeholder */
+}
+
+.nav-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #00234B;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.nav-links a.active {
+    background-color: #e0f3ff;
+    color: #00234B;
+}
+
+.start-leasing-btn {
+    background-color: #00234B;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #eaf6ff;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 3.5em;
+    color: #00234B;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 20px;
+}
+
+.hero-image img {
+    max-width: 500px;
+    height: auto;
+}
+
+/* Impact Section */
+.impact {
+    padding: 80px 20px;
+    background-color: #fffbe9;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.impact-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.impact-item h3 {
+    font-size: 2.5em;
+    color: #00234B;
+    margin: 0;
+}
+
+.impact-item p {
+    color: #555;
+    margin: 5px 0 0;
+}
+
+.impact-item img {
+    width: 80px; /* Placeholder */
+    height: 80px; /* Placeholder */
+}
+
+
+/* News Section */
+.news {
+    padding: 80px 20px;
+    background-color: #f8f9fa;
+}
+
+.news-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.news-card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 350px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    text-align: left;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 15px;
+    height: 200px; /* Placeholder */
+    object-fit: cover;
+}
+
+.news-card h3 {
+    color: #00234B;
+    margin-top: 15px;
+}
+
+.news-card p {
+    color: #555;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.carousel-dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Team Section */
+.team {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 150px; /* Placeholder */
+    height: 150px; /* Placeholder */
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.member-info {
+    background-color: #00234B;
+    color: white;
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+    margin-top: -10px;
+    position: relative;
+}
+
+.member-info h4 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.member-info p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.member-info p img {
+    width: 16px; height: 16px; vertical-align: middle; margin-left: 5px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #001f3f;
+    color: white;
+    padding: 60px 20px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.footer-about {
+    max-width: 300px;
+}
+
+.footer-about img {
+    height: 40px; /* Placeholder */
+    margin-bottom: 20px;
+}
+
+.footer-about p {
+    font-size: 0.9em;
+    line-height: 1.6;
+    opacity: 0.8;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+}
+
+.social-icons img {
+    width: 24px; /* Placeholder */
+    height: 24px; /* Placeholder */
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.links-column h4 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.links-column a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid #334;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .nav-links {
+        display: none; /* Hide nav links for a simpler mobile menu logic */
+    }
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+    .impact-item {
+        justify-content: space-around;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2em;
+    }
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .team-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

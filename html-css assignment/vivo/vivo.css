@@ -1,0 +1,501 @@
+/* ===================================
+   VIVO WEBSITE CLONE - EXTERNAL CSS
+   File: style.css
+   =================================== */
+
+/* ============= RESET & BASE STYLES ============= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============= HEADER STYLES ============= */
+.main-header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.main-nav a {
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.main-nav a:hover {
+    color: #0066cc;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-icon img,
+.user-icon img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    transition: 0.3s;
+}
+
+/* ============= HERO SECTION ============= */
+.hero-section {
+    background-color: #fff;
+    padding: 40px 0 60px;
+}
+
+.hero-section h1 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ai-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ai-badge span {
+    font-size: 12px;
+    color: #666;
+}
+
+.ai-icon {
+    background: linear-gradient(135deg, #0066ff, #00ccff);
+    color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hero-text h2 {
+    font-size: 56px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.co-engineered {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.co-engineered img {
+    height: 25px;
+    display: inline-block;
+}
+
+.hero-text h3 {
+    font-size: 38px;
+    font-weight: 400;
+    color: #b8956a;
+}
+
+/* ============= SECONDARY HERO ============= */
+.secondary-hero {
+    background: linear-gradient(180deg, #c9a574 0%, #f4e4c1 100%);
+    padding: 80px 0;
+    margin-top: 40px;
+}
+
+.secondary-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.secondary-text h2 {
+    font-size: 56px;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.secondary-text .co-engineered {
+    color: white;
+}
+
+.secondary-text h3 {
+    font-size: 38px;
+    font-weight: 400;
+    color: white;
+}
+
+.secondary-image {
+    position: relative;
+}
+
+/* ============= DISCOVER SECTION ============= */
+.discover-section {
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.discover-section h2 {
+    font-size: 42px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.discover-item {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.discover-item:hover {
+    transform: translateY(-5px);
+}
+
+.discover-item.large {
+    grid-column: span 2;
+}
+
+.discover-item.medium {
+    grid-row: span 2;
+}
+
+.discover-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.discover-label {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ============= FOOTER STYLES ============= */
+.main-footer {
+    background-color: #2d3540;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-column ul li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    color: #bbb;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-column a:hover {
+    color: #fff;
+}
+
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.contact-icon {
+    font-size: 24px;
+}
+
+.contact-item h4 {
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+.contact-item p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-social {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #444;
+}
+
+.footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    background-color: #4a5568;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: #5a6578;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #bbb;
+    font-size: 14px;
+}
+
+/* ============= RESPONSIVE DESIGN ============= */
+
+/* Tablets and Small Laptops (1024px and below) */
+@media (max-width: 1024px) {
+    .main-nav ul {
+        gap: 20px;
+    }
+
+    .main-nav a {
+        font-size: 13px;
+    }
+
+    .hero-text h2,
+    .secondary-text h2 {
+        font-size: 42px;
+    }
+
+    .hero-text h3,
+    .secondary-text h3 {
+        font-size: 28px;
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .main-nav {
+        display: none;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .hero-content,
+    .secondary-hero-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-section h1,
+    .discover-section h2 {
+        font-size: 32px;
+    }
+
+    .hero-text h2,
+    .secondary-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-text h3,
+    .secondary-text h3 {
+        font-size: 24px;
+    }
+
+    .discover-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .discover-item.large,
+    .discover-item.medium {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .hero-section,
+    .secondary-hero,
+    .discover-section {
+        padding: 40px 0;
+    }
+
+    .hero-section h1,
+    .discover-section h2 {
+        font-size: 28px;
+        margin-bottom: 25px;
+    }
+
+    .hero-text h2,
+    .secondary-text h2 {
+        font-size: 28px;
+    }
+
+    .hero-text h3,
+    .secondary-text h3 {
+        font-size: 20px;
+    }
+
+    .ai-badge {
+        padding: 8px 12px;
+    }
+
+    .ai-icon {
+        width: 30px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .contact-item h4 {
+        font-size: 18px;
+    }
+
+    .social-icons a {
+        width: 40px;
+        height: 40px;
+    }
+}

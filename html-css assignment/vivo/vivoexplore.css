@@ -1,0 +1,232 @@
+/* --- General, Reset, and Reusable Components (Header, Footer, FABs) --- */
+/* You can copy the CSS from the previous response for body, .site-header, .site-footer-dark, .floating-buttons etc. */
+/* This CSS file adds styles for the new sections and assumes the previous styles are present. */
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f7f8fa;
+    color: #333;
+}
+* { box-sizing: border-box; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; padding: 0; margin: 0; }
+.container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
+.site-main { padding-top: 70px; } /* Adjust if header height changes */
+section { padding: 60px 0; }
+
+/* --- Reusable Header/Footer styles --- */
+.site-header { background-color: #fff; padding: 15px 0; border-bottom: 1px solid #eee; position: fixed; top: 0; left: 0; right: 0; z-index: 1000; }
+.site-header .container { display: flex; justify-content: space-between; align-items: center; }
+.site-header .logo img { height: 24px; width: 80px; background-color: #ddd; }
+.main-nav ul { display: flex; gap: 30px; }
+.main-nav a { color: #555; font-size: 14px; font-weight: 500; padding-bottom: 5px; }
+.main-nav a:hover, .main-nav a.active { color: #007bff; border-bottom: 2px solid #007bff; }
+.header-icons { display: flex; gap: 20px; align-items: center; }
+.header-icons img { height: 24px; width: 24px; background-color: #ddd; }
+
+
+/* --- Hero Section --- */
+.hero-explore-section {
+    position: relative;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    color: #fff;
+}
+.hero-background {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: -2;
+}
+.hero-background img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    background-color: #555; /* Placeholder BG */
+}
+.hero-explore-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+.hero-content {
+    padding: 0 5%;
+}
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+.hero-content p {
+    font-size: 18px;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+/* --- Reusable Button --- */
+.learn-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border: 1px solid #555;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.hero-content .learn-more-btn {
+    border-color: #fff;
+}
+.learn-more-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+.learn-more-btn i {
+    font-size: 12px;
+}
+
+/* --- Press Centre Section --- */
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.section-header h2 { font-size: 32px; margin-bottom: 10px; }
+.section-header p { color: #666; margin-bottom: 20px; }
+
+.press-feature-card {
+    display: flex;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    align-items: center;
+}
+.press-feature-image {
+    flex: 1 1 55%;
+}
+.press-feature-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    background-color: #e0e0e0;
+}
+.press-feature-content {
+    flex: 1 1 45%;
+    padding: 40px;
+}
+.press-feature-content h3 {
+    font-size: 24px;
+    margin: 15px 0;
+}
+.press-feature-content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.press-feature-content span {
+    color: #888;
+    font-size: 14px;
+    display: block;
+    margin-top: 20px;
+}
+
+/* --- News Grid Section --- */
+.news-grid-section { background-color: #fff; }
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+.news-card {
+    background-color: #f7f8fa;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+.news-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    background-color: #e0e0e0;
+}
+.news-card-content {
+    padding: 20px;
+}
+.news-card-content h4 {
+    font-size: 18px;
+    margin: 0 0 10px;
+    line-height: 1.4;
+    min-height: 50px; /* To align text */
+}
+.news-card-content p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 15px;
+}
+.news-card-content span {
+    font-size: 13px;
+    color: #999;
+}
+
+/* --- Info Cards Section --- */
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.info-card {
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+.info-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    background-color: #e0e0e0;
+}
+.info-card-content {
+    padding: 30px;
+}
+.info-card-content h3 { font-size: 24px; margin: 0 0 10px; }
+.info-card-content p { font-size: 16px; color: #666; margin-bottom: 25px; }
+
+
+/* --- Floating Buttons & Footer (reused) --- */
+.floating-buttons { position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column; gap: 10px; z-index: 1000; }
+.floating-buttons button { width: 50px; height: 50px; border-radius: 50%; border: none; cursor: pointer; box-shadow: 0 4px 10px rgba(0,0,0,0.15); display: flex; align-items: center; justify-content: center; }
+.fab-chat { background-color: #4c82f7; }
+.fab-up { background-color: #fff; }
+.floating-buttons img { width: 24px; height: 24px; background-color: #ccc; }
+
+.site-footer-dark { background-color: #1c1d21; color: #ccc; padding-top: 60px; font-size: 14px; }
+.footer-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 30px; }
+.footer-column h4 { color: #fff; font-size: 16px; margin-bottom: 20px; }
+.footer-column ul li { margin-bottom: 12px; }
+.footer-column a:hover { color: #fff; }
+.contact-column .contact-item { margin-bottom: 20px; }
+.contact-column .contact-item a { font-size: 18px; font-weight: 500; color: #fff; }
+.footer-bottom { border-top: 1px solid #333; margin-top: 40px; padding: 20px 0; }
+.footer-bottom .container { display: flex; justify-content: space-between; align-items: center; }
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .main-nav { display: none; }
+    .news-grid, .info-grid { grid-template-columns: 1fr; }
+    .press-feature-card { flex-direction: column; }
+    .press-feature-image img { height: 250px; }
+    .hero-explore-section { height: 50vh; }
+    .hero-content h1 { font-size: 36px; }
+    .footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    .footer-bottom .container { flex-direction: column; gap: 15px; text-align: center; }
+}
+

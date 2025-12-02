@@ -1,0 +1,281 @@
+/* General Body Styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+nav a.active, nav a:hover {
+    background-color: #e7f0ff;
+    color: #0056b3;
+}
+
+.start-leasing-btn {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+}
+
+.vehicle-comparison h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.vehicle-categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.category-btn {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.category-btn.active {
+    background-color: #0056b3;
+    color: #fff;
+    border-color: #0056b3;
+}
+
+.comparison-table {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.vehicle-selection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-left: auto;
+    width: 66.66%;
+}
+
+.vehicle-selector {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #001f3f;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.vehicle-selector img {
+    height: 40px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.vehicle-selector select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #001f3f;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.spec-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.spec-label {
+    font-weight: bold;
+    color: #555;
+}
+
+.spec-value {
+    background-color: #fff;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 0 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #001f3f;
+    color: #fff;
+    padding: 50px 0 20px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-logo-address {
+    flex-basis: 30%;
+}
+
+.footer-logo-address img {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.footer-logo-address p {
+    line-height: 1.6;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.footer-links h4 {
+    margin-bottom: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #334;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .comparison-table, .vehicle-selection, .spec-row {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-selection {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .spec-row {
+        text-align: center;
+    }
+
+    .spec-label {
+        margin-bottom: 10px;
+    }
+    
+    .spec-value {
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-top, .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}
